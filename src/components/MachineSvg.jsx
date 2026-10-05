@@ -30,7 +30,7 @@ export default function MachineSvg({ className = '', variant = 'combo', title })
 
   return (
     <svg className={`machine ${className}`} viewBox={`0 0 ${W} ${H}`} width={W} height={H} role="img" aria-labelledby={id('t')}>
-      <title id={id('t')}>{title || 'Illustration of an AC Action vending machine stocked with drinks, crisps and chocolate'}</title>
+      <title id={id('t')}>{title || 'An AC Action vending machine stocked with drinks, crisps and chocolate'}</title>
       <defs>
         <linearGradient id={id('body')} x1="0" x2="1">
           <stop offset="0" stopColor="#070d14" />
