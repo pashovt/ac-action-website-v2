@@ -15,7 +15,9 @@ v1 (the cinematic brochure, with an enquiry form) is a separate repo: `pashovt/a
   (exactvending.co.uk/free-business-vending-machines): top bar, header, dark banner, then light
   sections with photos, bullet lists and a Q&A. Navy and gold are kept from the business card.
 - **Logo:** the AC mark. **Name:** AC Action (never "AC Action Show").
-- **Photos:** generic stock images for now (credits below).
+- **Photos:** generic stock images for now (credits below). They include real vending machine
+  photos in "Machines we install" and an office break area with a machine in "About". There are no
+  "illustrative" captions on the page.
 - **Privacy policy:** the client is drawing it up. Set `contact.privacyPolicyUrl` and a footer link appears.
 - **Motion kept to a minimum:**
   - On page load, the hero machine plays a short vend: three keypad presses, and each item pops out
@@ -29,8 +31,8 @@ v1 (the cinematic brochure, with an enquiry form) is a separate repo: `pashovt/a
 1. **Cover (hero)**, plus a three-point trust strip
 2. **About** (photo and introduction)
 3. **What we stock** (three ranges with product models) and **Machines we install** (snack,
-   combination and drinks; SVG illustrations via `MachineSvg variant`)
-4. **Why AC Action** (benefits checklist and the four sectors with photos)
+   combination and drinks; stock photos)
+4. **Why AC Action** (benefits checklist, plus photos of three sectors: warehouses, call centres and offices)
 5. **Our service** (installation, restocking, maintenance and servicing, one local contact) and
    **Service area** (places, illustrative map, postcode checker)
 6. **Questions and answers**, then **Contact** (details only), then the footer
@@ -89,13 +91,16 @@ Before enabling it, cover it in the privacy policy and add cookie consent.
 
 ## Image credits (Unsplash Licence: free to use, no attribution required)
 
-Illustrative stand-ins only. They are not AC Action sites or clients.
+Generic stock photos, used until AC Action has its own. They are not AC Action machines, sites or clients.
 
 | File | Photo | Photographer |
 |---|---|---|
 | `public/media/warehouse.webp` | [Empty modern warehouse](https://unsplash.com/photos/empty-modern-warehouse-interior-with-polished-concrete-floor-3lkaszxWfGc) | Craftsman Concrete Floors |
 | `public/media/callcentre.webp` | [Open-plan office](https://unsplash.com/photos/people-working-at-desks-in-open-office-kN_kViDchA0) | Arlington Research |
-| `public/media/highrise.webp` | [Glass-walled building](https://unsplash.com/photos/white-and-blue-glass-walled-building-Wm8opOd-MDE) | Kenrick Baksh |
+| `public/media/office-vending.webp` | [Office break area with vending machine](https://unsplash.com/photos/black-and-blue-vending-machine-beside-brown-wooden-cabinet-2hELuLQcEWU) | Petr (@mpetrucho) |
+| `public/media/machine-snack.webp` | [Snack vending machine](https://unsplash.com/photos/red-and-black-vending-machine-In51lypcCDA) | Denny Müller |
+| `public/media/machine-combo.webp` | [Combination vending machine](https://unsplash.com/photos/grey-vending-machine-r74II0tE7tc) | Stéphan Valentin |
+| `public/media/machine-drinks.webp` | [Drinks vending machine](https://unsplash.com/photos/vending-machine-with-assorted-beverage-drinks-qh8jrjbYQbo) | Maximilian Bungart |
 | `public/media/workplace.webp` | [Office kitchen](https://unsplash.com/photos/a-kitchen-with-black-cabinets-and-a-white-counter-top-OI6D_VKxSMw) | Craig Lovelidge |
 
 Product models, the logo redraw, the map and the favicon are original SVG.

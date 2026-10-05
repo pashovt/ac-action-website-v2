@@ -569,13 +569,6 @@
   rotate: -6deg;
 }
 
-.hero__caption {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 0.75rem;
-  color: rgb(201 206 214 / 0.75);
-}
-
 @media (min-width: 900px) {
   .hero__inner {
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
@@ -657,18 +650,11 @@
 
 .about__photo img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: 100% 50%; /* frame the machine and window */
   border-radius: var(--radius-lg);
   box-shadow: 0 24px 50px rgb(13 24 35 / 0.18);
-}
-
-.about__photo figcaption,
-.sectors__credit,
-.machines__note {
-  margin-top: 0.6rem;
-  font-size: 0.75rem;
-  color: var(--fg-muted);
 }
 
 .about__body {
@@ -808,17 +794,20 @@
 }
 
 .machine-card__stage {
-  display: grid;
-  place-items: center;
-  padding: 2rem 1rem 1.5rem;
-  background:
-    radial-gradient(60% 50% at 50% 90%, rgb(199 165 105 / 0.2), transparent 70%),
-    linear-gradient(170deg, var(--navy-850), var(--navy-950));
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--navy-950);
 }
 
-.machine-card__stage .machine {
-  width: min(58%, 170px);
-  filter: drop-shadow(0 18px 24px rgb(0 0 0 / 0.4));
+.machine-card__stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-out);
+}
+
+.machine-card:hover .machine-card__stage img {
+  transform: scale(1.03);
 }
 
 .machine-card__text {
@@ -839,10 +828,6 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.machines__note {
-  margin-top: 1.25rem;
 }
 
 /* ---------- Benefits ---------- */
@@ -917,12 +902,6 @@
   font-size: var(--fs-small);
 }
 
-@media (min-width: 640px) {
-  .sectors {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (min-width: 1024px) {
   .benefits__top {
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
@@ -931,7 +910,7 @@
   }
 
   .sectors {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

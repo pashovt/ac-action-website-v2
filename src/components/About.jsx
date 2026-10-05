@@ -9,7 +9,6 @@ export default function About() {
       <div className="container about__grid">
         <figure className="about__photo" data-reveal>
           <img src={p.src} width={p.width} height={p.height} alt={p.alt} loading="lazy" decoding="async" />
-          <figcaption>{about.photoCaption}</figcaption>
         </figure>
         <div>
           <PanelHead id="about-title" eyebrow={about.eyebrow} heading={about.heading} />

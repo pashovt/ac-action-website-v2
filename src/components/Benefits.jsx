@@ -42,7 +42,6 @@ export default function Benefits() {
             );
           })}
         </ul>
-        <p className="sectors__credit">Illustrative photography.</p>
       </div>
     </section>
   );

@@ -18,7 +18,7 @@ const MAP_PLACES = [
   { name: 'Ruddington', angle: 175, miles: 5 },
 ];
 
-/** Service area: places served, postcode checker and an illustrative map. */
+/** Service area: places served, postcode checker and a radius map. */
 export default function Coverage() {
   return (
     <section id={coverage.id} className="section coverage-v2" aria-labelledby="coverage-title">

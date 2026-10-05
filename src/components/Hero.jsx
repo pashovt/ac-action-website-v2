@@ -35,7 +35,7 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <figure className="hero__machine">
+          <div className="hero__machine">
             <div className="hero__machine-frame" data-frame>
               <MachineSvg />
               {hero.vend.map((v, i) => (
@@ -44,8 +44,7 @@ export default function Hero() {
                 </span>
               ))}
             </div>
-            <figcaption className="hero__caption">Illustration — not a specific machine.</figcaption>
-          </figure>
+          </div>
         </div>
       </section>
 

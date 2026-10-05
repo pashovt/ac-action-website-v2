@@ -14,7 +14,7 @@ export default function CoverageMap({ places }) {
   return (
     <figure className="coverage__map">
       <svg viewBox="0 0 360 360" role="img" aria-labelledby="map-title">
-        <title id="map-title">Illustrative map of the service area: around 15 miles from Nottingham city centre.</title>
+        <title id="map-title">Map of the service area: around 15 miles from Nottingham city centre.</title>
         <defs>
           <radialGradient id="map-glow">
             <stop offset="0" stopColor="#c7a569" stopOpacity=".28" />
@@ -54,7 +54,6 @@ export default function CoverageMap({ places }) {
           );
         })}
       </svg>
-      <figcaption>Illustrative map — not to scale.</figcaption>
     </figure>
   );
 }

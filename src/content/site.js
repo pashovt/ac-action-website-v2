@@ -49,7 +49,10 @@ export const nav = {
 export const photos = {
   warehouse: { src: media('warehouse.webp'), width: 1800, height: 1200, alt: 'A large, brightly lit warehouse floor with a polished concrete finish.' },
   callcentre: { src: media('callcentre.webp'), width: 1600, height: 1067, alt: 'An open-plan office with rows of desks, screens and desk phones.' },
-  highrise: { src: media('highrise.webp'), width: 1600, height: 1067, alt: 'A curved, glass-fronted high-rise office building against a clear sky.' },
+  officeVending: { src: media('office-vending.webp'), width: 1600, height: 1067, alt: 'A bright office break area with a glass-fronted vending machine beside recycling bins.' },
+  machineSnack: { src: media('machine-snack.webp'), width: 900, height: 1350, alt: 'A glass-fronted snack vending machine stocked with crisps and chocolate bars.' },
+  machineCombo: { src: media('machine-combo.webp'), width: 1000, height: 1000, alt: 'A combination vending machine with snacks on the upper shelves and bottled water and cans below.' },
+  machineDrinks: { src: media('machine-drinks.webp'), width: 900, height: 1357, alt: 'A glass-fronted drinks vending machine stocked with bottles and cans.' },
   office: { src: media('workplace.webp'), width: 1800, height: 1200, alt: 'A modern office kitchen with dark cabinets, a white worktop and a coffee machine.' },
 };
 
@@ -82,8 +85,7 @@ export const about = {
     'AC Action Ltd places vending machines stocked with crisps, chocolate and drinks in workplaces across Nottingham and the surrounding area.',
     'It is a simple amenity for the people who use your building every day. We install the machine, keep it stocked, and maintain and service it — so it is one less thing for you or your facilities team to think about.',
   ],
-  photo: 'office',
-  photoCaption: 'Illustrative photograph',
+  photo: 'officeVending',
 };
 
 /** Panel 3 — vending offering. */
@@ -111,18 +113,17 @@ export const range = {
   ],
 };
 
-/** Machines we install (illustrations — models matched to each site). */
+/** Machines we install (stock photos — the exact model is matched to each site). */
 export const machines = {
   id: 'machines',
   eyebrow: 'Our machines',
   heading: 'Machines we install.',
   intro: 'Modern, reliable machines matched to the size of your site and the people using it.',
   items: [
-    { variant: 'snack', title: 'Snack machine', body: 'Crisps, chocolate and confectionery on spiral shelves.', tag: 'Snacks' },
-    { variant: 'combo', title: 'Combination machine', body: 'Snacks and chilled drinks in one cabinet — ideal where space is limited.', tag: 'Snacks + drinks' },
-    { variant: 'drinks', title: 'Drinks machine', body: 'Chilled cans, soft drinks and bottled water.', tag: 'Drinks' },
+    { photo: 'machineSnack', title: 'Snack machine', body: 'Crisps, chocolate and confectionery on spiral shelves.', tag: 'Snacks' },
+    { photo: 'machineCombo', title: 'Combination machine', body: 'Snacks and chilled drinks in one cabinet — ideal where space is limited.', tag: 'Snacks + drinks' },
+    { photo: 'machineDrinks', title: 'Drinks machine', body: 'Chilled cans, soft drinks and bottled water.', tag: 'Drinks' },
   ],
-  note: 'Illustrations. The exact machine is chosen for your site.',
 };
 
 /** Panel 4 — workplace benefits ("Why AC Action"). */
@@ -142,7 +143,6 @@ export const benefits = {
   sectors: [
     { title: 'Warehouses', photo: 'warehouse', body: 'Refreshments within reach across long shifts.' },
     { title: 'Call centres', photo: 'callcentre', body: 'Quick breaks without leaving the building.' },
-    { title: 'High-rise buildings', photo: 'highrise', body: 'One convenient point for tenants and visitors.' },
     { title: 'Office spaces', photo: 'office', body: 'A better break area for teams of every size.' },
   ],
 };
